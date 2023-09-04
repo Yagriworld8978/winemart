@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body background="Registrationbg.jpeg" style="background-size: cover;background-repeat: no-repeat;">
+  <header style="background-color: transparent">
+
+    <div class="header-1">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            
+            <a href="home2.html" class="btn btn-info" role="button" style="border: burlywood;">Home</a>
+            <a href="Product2veg.html" class="btn btn-info" role="button" style="border: burlywood;">Products</a>
+            <a href="login.html" class="btn btn-info" role="button" style="border:  burlywood;">Login</a>
+            <a href="Registration.html" class="btn btn-info" role="button" style="border: burlywood;">Registration</a>
+            <a href="#" class="btn btn-info" role="button" style="border: burlywood;">Cart</a>    
+            <a href="contact.html" class="btn btn-info" role="button" style="border: burlywood;">Contact Us</a>
+        </nav>    
+    </div>
+
+</header>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">Registration Form</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Here you can add your JavaScript code to handle form submission
+    alert('Registration submitted!');
+  });
+</script>
+
+</body>
+</html>
